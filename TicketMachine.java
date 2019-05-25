@@ -9,10 +9,11 @@
  * @author David J. Barnes and Michael Kolling
  * @version 2008.03.30
  */
-public class TicketMachine
+import java.util.Scanner;
+ public class TicketMachine
 {
     // The price of a ticket from this machine.
-    private int price;
+    private  int price;
     // The amount of money entered by a customer so far.
     private int balance;
     // The total amount of money collected by this machine.
@@ -23,6 +24,7 @@ public class TicketMachine
      * Note that the price must be greater than zero, and there
      * are no checks to ensure this.
      */
+    
     public TicketMachine(int ticketCost)
     {
         price = ticketCost;
@@ -52,6 +54,7 @@ public class TicketMachine
      */
     public void insertMoney(int amount)
     {
+        
         balance = balance + amount;
     }
 
